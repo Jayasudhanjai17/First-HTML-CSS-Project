@@ -22,6 +22,7 @@ color:#fff;
 padding: 12px;
 border:none;
 border-radius: 6px;
+cursor: pointer;
 }
 
 .container{
@@ -54,6 +55,86 @@ border-radius: 6px;
 .hero__image{
     width:100%;
 }
+
+.hero__text{
+    font-size:30px;
+    color: #1d3557;
+    margin:20px 0;
+}
+
+/* Menu Styles*/
+
+.explore__menu__container{
+    margin-top: 50px;
+}
+
+.explore__menu__text{
+    font-size: 30px;
+    color:#1d3557;
+     margin: 20px 0;
+    text-align:center;
+}
+.food__menu__card{
+    width:100%;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+.food__image{
+    width:100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.food__menu__card__description {
+    padding:20px;
+}
+
+.explore__menu__veiw__more{
+    display:flex;
+    justify-content:center;
+}
+
+/* Flex*/
+.restaurants__description{
+    font: size 30px;
+    color:#1d3557;
+    margin:20px 0;
+    text-align:center;
+}
+.restaurants__flex__row__one,
+.restaurants__flex__row__two{
+    width:100%;
+    display:flex;
+    gap:4px;
+}
+.restaurants__flex__row__one{
+    align-items:baseline;
+    margin-bottom:4px;
+} 
+ 
+.restaurant__1__image,
+.restaurant__2__image,
+.restaurant__3__image,
+.restaurant__4__image{
+    width:100%;
+    height:100%;
+    border-radius:7px;
+}
+
+.restaurant__1,
+.restaurant__4{
+    width:100%;
+    height:150px;
+}
+
+.restaurant__2,
+.restaurant__3{
+    width:120%;
+    height: 200px;
+}
+
 @media (min-width:768px) {
     .navbar{
         justify-content: space-between;
@@ -63,7 +144,7 @@ border-radius: 6px;
         width: 150px;
     }
     .button__primary{
-        padding:20px;
+        padding:12px 20px;
         font-size: 20px;
     }
     .hero__container{
@@ -73,18 +154,156 @@ border-radius: 6px;
         justify-content: space-between;
         gap:10px;
     }
-}
+
+    .explore__menu__container{
+        position:relative;
+    }
+    .explore__menu__gradient__bg{
+        position:absolute;
+        left:0;
+        top:0;
+
+        height: 100%;
+        width: 100%;
+
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+
+        z-index:-3;
+        transform:skewY(-5deg);
+    }
+    .explore__menu__lists{
+        margin-top: 50px;
+        display:flex;
+        gap:8px;
+    }
+
+    #pizza__card{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+    .restaurants__description{
+        font-size: 40px;
+        width:100%;
+    }
+
+    .restaurants__container{
+        display:flex;
+        align-items: center;
+    }
+    .restaurants__flex{
+        width:100%;
+    }
+} 
 
 @media(min-width:1020px){
     .container{
-        max-width: 1010px;
+        max-width: 900px;
     }
-    .hero__image__container{
-        width: 500px;
-        height: 500px;
+    
+    .hero __text{
+        font-size:50px;
+    }
+    .explore__menu__lists{
+        gap:20px;
+        padding:0 20px;
+    }
+
+    .explore__menu__text{
+        font-size: 50px;
+    }
+
+    .restaurants__container{
+        margin-top:30px;
     }
 }
+    
+@media(min-width:1400px) {
+    .container{
+        max-width:1250;
+    }
+}
+.downbar__logo{
+    padding: 30px;
+}
+.down__bar{
+    margin-top: 130px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+      );
+      border-radius: 6px 6px 0 0;
+      padding-top: 30px;
+}
+.down__bar{
+    display: flex;
+    justify-content: space-around;
+        margin-top: 220px;}
 
-@media(min-width:1400px){
+.update__container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.update__text{
+    padding-bottom: 10px;
+}
+.email__input__bar{
+    width: 200px;
+    height: 35px;
+    background-color: rgb(238, 163, 155);
+    border-radius: 6px;
+    border: red solid 1px;
+}
+.email__input__bar:focus{
+    border-color: black;
 
+}
+
+.quote__container{
+    position: relative;
+    margin-top: 40px ;
+    margin-bottom: 40px;
+    text-align: center;
+    
+    
+    
+   
+}
+.qoute__image__container{
+  position: absolute;
+   width: 100%; 
+   height: 200px;
+   z-index: -1;
+   opacity: 80%;
+   
+   
+
+
+   
+}
+.quote__image{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+.qoute__text{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color:#fff;
+    padding-top: 80px;
 }
